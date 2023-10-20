@@ -36,8 +36,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.arboretum.R
 import com.example.arboretum.domain.model.Plant
 import com.example.arboretum.ui.components.Header
 import com.example.arboretum.ui.components.MovieGrid
@@ -76,7 +78,7 @@ fun MainScreen(
         },
     )
     MainScreenContent(
-        title = "Plants",
+        title = stringResource(R.string.plants),
         plants = plants,
         gridState = gridState,
         failedPosterResponse = { errorMessage ->

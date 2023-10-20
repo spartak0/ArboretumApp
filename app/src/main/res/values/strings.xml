@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Arboretum</string>
+    <string name="plants">Plants</string>
+    <string name="confirm_action">Confirm action</string>
+    <string name="delete_item_text">Are you sure want to remove the selected item?</string>
+    <string name="empty">Empty</string>
 </resources>

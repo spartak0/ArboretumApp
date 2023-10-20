@@ -5,6 +5,4 @@ sealed class Screen(val route:String){
     object SplashScreen:Screen(route="splash_screen")
     object DetailsScreen:Screen(route="details_screen")
     object SearchScreen:Screen(route="search_screen")
-    object CameraScreen:Screen(route="camera_screen")
-    object ImagePickerScreen:Screen(route="camera_screen")
 }

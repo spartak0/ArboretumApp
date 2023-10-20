@@ -29,6 +29,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -138,8 +139,8 @@ fun ConfirmDialog(
                 Text(text = "НЕТ")
             }
         },
-        title = { Text(text = "Подтверждение действия") },
-        text = { Text("Вы действительно хотите удалить выбранный элемент?") },
+        title = { Text(text = stringResource(R.string.confirm_action)) },
+        text = { Text(stringResource(R.string.delete_item_text)) },
     )
 }
 

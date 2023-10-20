@@ -42,7 +42,7 @@ class MainScreenViewModel @Inject constructor(
         }
     }
 
-    fun insertPlant(plant: Plant) {
+    private fun insertPlant(plant: Plant) {
         viewModelScope.launch(Dispatchers.IO) {
             roomRepository.insertPlant(plant)
         }

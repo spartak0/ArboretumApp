@@ -62,7 +62,6 @@ class MainActivity : ComponentActivity() {
                         }
                     },
                 ) {
-                    Log.d("AAA", "onCreate: ")
                     NavGraph(showSnackbar = { message, action ->
                         scope.launch {
                             snackbarController.showSnackbar(message, action)

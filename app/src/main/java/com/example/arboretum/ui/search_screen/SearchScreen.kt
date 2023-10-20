@@ -21,8 +21,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.arboretum.R
 import com.example.arboretum.domain.model.Plant
 import com.example.arboretum.ui.components.HEADER_HEIGHT
 import com.example.arboretum.ui.components.MovieGrid
@@ -101,6 +103,6 @@ fun SearchScreenContent(
 @Composable
 fun EmptySearch() {
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-        Text("Empty", style = MaterialTheme.typography.displaySmall)
+        Text(stringResource(R.string.empty), style = MaterialTheme.typography.displaySmall)
     }
 }
